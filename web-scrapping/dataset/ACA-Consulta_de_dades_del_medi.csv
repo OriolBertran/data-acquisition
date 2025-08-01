@@ -1,0 +1,100 @@
+Data,Codi Estació,Codi massa d'aigua,Massa d'aigua,UTM X,UTM Y,Variable,Profunditat mostra (m),Valor,Unitat Mesura,Fondària Pou (m),Cota del nivell piezomètric (m.s.n.m)
+2015/01/02,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.45,m,13.2,38.55
+2015/01/02,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.45,m,13.2,40.55
+2015/01/02,08125-0045,16,Al·luvials del Vallès,433036,4595015,Nivell piezomètric,-,8.65,m,12,36.35
+2015/01/21,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.53,m,13.2,38.47
+2015/01/21,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.53,m,13.2,40.47
+2015/01/21,08125-0045,16,Al·luvials del Vallès,433036,4595015,Nivell piezomètric,-,8.65,m,12,36.35
+2015/01/28,08115-0031,16,Al·luvials del Vallès,435966.02,4599108.64,Nivell piezomètric (F000349NPM),-,5.6,m,7.1,56.4
+2015/01/28,08125-0042,16,Al·luvials del Vallès,432585.98,4593680.65,Nivell piezomètric (F000357NPM),-,5.61,m,15.1,29.39
+2015/02/18,08115-0031,16,Al·luvials del Vallès,435966.02,4599108.64,Nivell piezomètric (F000349NPM),-,5.69,m,7.1,56.31
+2015/02/19,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.49,m,13.2,38.51
+2015/02/19,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.49,m,13.2,40.51
+2015/02/19,08125-0045,16,Al·luvials del Vallès,433036,4595015,Nivell piezomètric,-,9.08,m,12,35.92
+2015/02/23,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.6,m,13.2,38.4
+2015/02/23,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.6,m,13.2,40.4
+2015/02/23,08125-0042,16,Al·luvials del Vallès,432585.98,4593680.65,Nivell piezomètric (F000357NPM),-,7.1,m,15.1,27.9
+2015/02/23,08125-0045,16,Al·luvials del Vallès,433036,4595015,Nivell piezomètric,-,9,m,12,36
+2015/03/06,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.55,m,13.2,38.45
+2015/03/06,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.55,m,13.2,40.45
+2015/03/06,08125-0045,16,Al·luvials del Vallès,433036,4595015,Nivell piezomètric,-,8.93,m,12,36.07
+2015/03/13,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.6,m,13.2,38.4
+2015/03/13,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.6,m,13.2,40.4
+2015/03/13,08125-0045,16,Al·luvials del Vallès,433036,4595015,Nivell piezomètric,-,8.75,m,12,36.25
+2015/03/20,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.61,m,13.2,38.39
+2015/03/20,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.61,m,13.2,40.39
+2015/03/20,08125-0045,16,Al·luvials del Vallès,433036,4595015,Nivell piezomètric,-,8.75,m,12,36.25
+2015/03/27,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.54,m,13.2,38.46
+2015/03/27,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.54,m,13.2,40.46
+2015/03/27,08115-0031,16,Al·luvials del Vallès,435966.02,4599108.64,Nivell piezomètric (F000349NPM),-,5.8,m,7.1,56.2
+2015/03/27,08125-0042,16,Al·luvials del Vallès,432585.98,4593680.65,Nivell piezomètric (F000357NPM),-,6.75,m,15.1,28.25
+2015/03/27,08125-0045,16,Al·luvials del Vallès,433036,4595015,Nivell piezomètric,-,8.7,m,12,36.3
+2015/04/08,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.61,m,13.2,38.39
+2015/04/08,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.61,m,13.2,40.39
+2015/04/08,08125-0045,16,Al·luvials del Vallès,433036,4595015,Nivell piezomètric,-,9.4,m,12,35.6
+2015/04/13,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.55,m,13.2,38.45
+2015/04/13,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.55,m,13.2,40.45
+2015/04/13,08125-0045,16,Al·luvials del Vallès,433036,4595015,Nivell piezomètric,-,8.76,m,12,36.24
+2015/04/22,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.6,m,13.2,38.4
+2015/04/22,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.6,m,13.2,40.4
+2015/04/22,08125-0045,16,Al·luvials del Vallès,433036,4595015,Nivell piezomètric,-,8.73,m,12,36.27
+2015/04/29,08115-0031,16,Al·luvials del Vallès,435966.02,4599108.64,Nivell piezomètric (F000349NPM),-,5.74,m,7.1,56.26
+2015/04/29,08125-0042,16,Al·luvials del Vallès,432585.98,4593680.65,Nivell piezomètric (F000357NPM),-,6.98,m,15.1,28.02
+2015/05/07,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.65,m,13.2,38.35
+2015/05/07,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.65,m,13.2,40.35
+2015/05/07,08125-0045,16,Al·luvials del Vallès,433036,4595015,Nivell piezomètric,-,8.76,m,12,36.24
+2015/05/21,08115-0031,16,Al·luvials del Vallès,435966.02,4599108.64,Nivell piezomètric (F000349NPM),-,5.5,m,7.1,56.5
+2015/05/21,08125-0042,16,Al·luvials del Vallès,432585.98,4593680.65,Nivell piezomètric (F000357NPM),-,7.6,m,15.1,27.4
+2015/05/22,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.59,m,13.2,38.41
+2015/05/22,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.59,m,13.2,40.41
+2015/05/22,08125-0045,16,Al·luvials del Vallès,433036,4595015,Nivell piezomètric,-,8.7,m,12,36.3
+2015/05/27,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.6,m,13.2,38.4
+2015/05/27,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.6,m,13.2,40.4
+2015/05/27,08125-0045,16,Al·luvials del Vallès,433036,4595015,Nivell piezomètric,-,8.77,m,12,36.23
+2015/06/10,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.7,m,13.2,38.3
+2015/06/10,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.7,m,13.2,40.3
+2015/06/10,08125-0045,16,Al·luvials del Vallès,433036,4595015,Nivell piezomètric,-,8.84,m,12,36.16
+2015/06/25,08115-0031,16,Al·luvials del Vallès,435966.02,4599108.64,Nivell piezomètric (F000349NPM),-,5.79,m,7.1,56.21
+2015/06/25,08125-0042,16,Al·luvials del Vallès,432585.98,4593680.65,Nivell piezomètric (F000357NPM),-,7.1,m,15.1,27.9
+2015/06/30,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.63,m,13.2,38.37
+2015/06/30,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.63,m,13.2,40.37
+2015/06/30,08125-0045,16,Al·luvials del Vallès,433036,4595015,Nivell piezomètric,-,8.9,m,12,36.1
+2015/07/08,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.75,m,13.2,38.25
+2015/07/08,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.75,m,13.2,40.25
+2015/07/08,08125-0045,16,Al·luvials del Vallès,433036,4595015,Nivell piezomètric,-,8.89,m,12,36.11
+2015/07/15,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.76,m,13.2,38.24
+2015/07/15,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.76,m,13.2,40.24
+2015/07/15,08125-0045,16,Al·luvials del Vallès,433036,4595015,Nivell piezomètric,-,8.91,m,12,36.09
+2015/07/17,08115-0031,16,Al·luvials del Vallès,435966.02,4599108.64,Nivell piezomètric (F000349NPM),-,5.65,m,7.1,56.35
+2015/07/17,08125-0042,16,Al·luvials del Vallès,432585.98,4593680.65,Nivell piezomètric (F000357NPM),-,6.9,m,15.1,28.1
+2015/07/30,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.8,m,13.2,38.2
+2015/07/30,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.8,m,13.2,40.2
+2015/07/30,08125-0045,16,Al·luvials del Vallès,433036,4595015,Nivell piezomètric,-,8.9,m,12,36.1
+2015/08/21,08115-0031,16,Al·luvials del Vallès,435966.02,4599108.64,Nivell piezomètric (F000349NPM),-,5.6,m,7.1,56.4
+2015/08/21,08125-0042,16,Al·luvials del Vallès,432585.98,4593680.65,Nivell piezomètric (F000357NPM),-,4,m,15.1,31
+2015/08/31,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.75,m,13.2,38.25
+2015/08/31,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.75,m,13.2,40.25
+2015/08/31,08125-0045,16,Al·luvials del Vallès,433036,4595015,Nivell piezomètric,-,8.99,m,12,36.01
+2015/09/10,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.75,m,13.2,38.25
+2015/09/10,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.75,m,13.2,40.25
+2015/09/10,08125-0045,16,Al·luvials del Vallès,433036,4595015,Nivell piezomètric,-,8.9,m,12,36.1
+2015/09/28,08115-0031,16,Al·luvials del Vallès,435966.02,4599108.64,Nivell piezomètric (F000349NPM),-,5.67,m,7.1,56.33
+2015/09/28,08125-0042,16,Al·luvials del Vallès,432585.98,4593680.65,Nivell piezomètric (F000357NPM),-,6.96,m,15.1,28.04
+2015/10/15,08115-0031,16,Al·luvials del Vallès,435966.02,4599108.64,Nivell piezomètric (F000349NPM),-,4.73,m,7.1,57.27
+2015/10/15,08125-0042,16,Al·luvials del Vallès,432585.98,4593680.65,Nivell piezomètric (F000357NPM),-,6.95,m,15.1,28.05
+2015/11/04,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,6.59,m,13.2,37.41
+2015/11/04,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,6.59,m,13.2,39.41
+2015/11/04,08125-0045,16,Al·luvials del Vallès,433036,4595015,Nivell piezomètric,-,8.61,m,12,36.39
+2015/11/11,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.8,m,13.2,38.2
+2015/11/11,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.8,m,13.2,40.2
+2015/11/11,08125-0045,16,Al·luvials del Vallès,433036,4595015,Nivell piezomètric,-,8.8,m,12,36.2
+2015/11/18,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,6.7,m,13.2,37.3
+2015/11/18,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,6.7,m,13.2,39.3
+2015/11/18,08125-0045,16,Al·luvials del Vallès,433036,4595015,Nivell piezomètric,-,8.78,m,12,36.22
+2015/11/25,08115-0031,16,Al·luvials del Vallès,435966.02,4599108.64,Nivell piezomètric (F000349NPM),-,5.68,m,7.1,56.32
+2015/11/25,08125-0042,16,Al·luvials del Vallès,432585.98,4593680.65,Nivell piezomètric (F000357NPM),-,6.91,m,15.1,28.09
+2015/11/26,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.82,m,13.2,38.18
+2015/11/26,08105-0021,16,Al·luvials del Vallès,433671,4595759,Nivell piezomètric,-,5.82,m,13.2,40.18
+2015/11/26,08125-0045,16,Al·luvials del Vallès,433036,4595015,Nivell piezomètric,-,8.89,m,12,36.11
+2015/12/22,08115-0031,16,Al·luvials del Vallès,435966.02,4599108.64,Nivell piezomètric (F000349NPM),-,5.7,m,7.1,56.3
+2015/12/22,08125-0042,16,Al·luvials del Vallès,432585.98,4593680.65,Nivell piezomètric (F000357NPM),-,6.9,m,15.1,28.1
