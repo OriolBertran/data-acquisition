@@ -1,6 +1,6 @@
-########################################################################
-##                       Importem libraries                           ##
-########################################################################
+#-------------------------------#
+# Importing the libraries       #
+#-------------------------------#
 import os
 import sys
 import time
@@ -14,16 +14,19 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common.exceptions import TimeoutException
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support import expected_conditions as EC
-########################################################################
 
-# Es defineix on desar els 3 datasets generats amb l'scraping i també l'informe executat
+#-------------------------------#
+# destination folder            #
+#-------------------------------#
 currentDirectory = os.getcwd()
 parentDirectory = os.path.abspath(os.path.join(currentDirectory, os.pardir))
 datasetFolder = "dataset"
 os.makedirs(os.path.join(parentDirectory, datasetFolder), exist_ok=True)
 folderToSaveDataset = os.path.join(parentDirectory, datasetFolder)
 
-# Es defineix les opcions del Chrome Driver
+#-------------------------------#
+# Chrome Driver options         #
+#-------------------------------#
 chrome_options = Options()
 # chrome_options.add_argument('--headless') 
 chrome_options.add_argument('--no-sandbox')
@@ -42,25 +45,26 @@ driver.implicitly_wait(10)
 
 def download_report(startDate, endDate):
     """
-    Funció que navega automàticament per la web de l'Agència Catalana de l'Aigua fins a capturar 
-    els tres datasets, més l'informe executat.
-    Paràmetres:
-        -  startDate (date): data inicial de l'informe a executar
-        -  endDate (date): data final de l'informe a executar
+    Function that automatically navigates the website of the Catalan Water Agency 
+    to capture the generated report.
+    
+    Parameters:
+        - startDate (date): start date of the report to be generated
+        - endDate (date): end date of the report to be generated
     """
     try:
-        # Pàgina inicial
+        #-- Website
         url_inicial = 'https://aplicacions.aca.gencat.cat/sdim21/'
         driver.get(url_inicial)
 
-        # Definim el temps d'espera
+        #-- waiting time
         wT = 25
 
-        # Des de la pàgina inicial, es selecciona "Entrar"
+        #-- 1) From the website, we select "Entrar"
         enterButton = driver.find_element(By.XPATH, '/html/body/div[2]/div/form/input[3]')
         enterButton.click()
 
-        # Es selecciona "DADES A PARTIR DEL 2007" i es procedeix a la pàgina següent
+        #-- 2) we select "DADES A PARTIR DEL 2007" (dates after 2007) and we continue
         yearButton = driver.find_element(By.XPATH, '/html/body/div[2]/div/form/div[1]/div[2]/label[1]/input')
         yearButton.click()
         time.sleep(2) #####
@@ -99,7 +103,7 @@ def download_report(startDate, endDate):
         #xarxaControl = pd.DataFrame({'Xarxa de Control': xarxaControl, 'Elements': elements})
         #xarxaControl.to_csv(os.path.join(folderToSaveDataset,r'xarxa_Control.csv'), index=False, encoding="utf-8-sig")
 
-        # "Xarxa de control". Es selecciona "Nivells piezomètrics" i es procedeix al següent pas: "Paràmetres"
+        #-- 3) Once we are in "Xarxa de control" (monitoring network), we select "Nivells piezomètrics" (piezometric levels) and we continue to the next step: "Paràmetres" (parameters)
         piezometricLevelsSelectionButton = WebDriverWait(driver, wT).until(EC.element_to_be_clickable((By.XPATH, "//label[@title='Nivells piezomètrics']")))
         piezometricLevelsSelectionButton.click()   
         loadingCircle = WebDriverWait(driver, wT).until(EC.presence_of_element_located((By.XPATH, '/html/body/div[1]/div[2]/div[1]/div[2]/img')))
@@ -107,8 +111,7 @@ def download_report(startDate, endDate):
         toParametersButton = WebDriverWait(driver, wT).until(EC.presence_of_element_located((By.XPATH, '/html/body/div[3]/div/form/div[1]/div[2]/div[6]/div/div/div[2]/div[1]/a/div')))
         toParametersButton.click()
         
-        # "Paràmetres". Es selecciona "Piezometria" i es procedeix al següent pas: "Àmbit geogràfic"
-        #piezometriaSelectionButton = WebDriverWait(driver, wT).until(EC.presence_of_element_located((By.XPATH, '/html/body/div[3]/div/form/div[1]/div[2]/div[3]/div/div/div[6]/div/ul/li/input')))
+        #-- 4) Once inside "Paràmetres", we select "Piezometria" (piezometry) and we continue to the next step: "Àmbit geogràfic" (geographic area)
         piezometriaSelectionButton = WebDriverWait(driver, wT).until(EC.element_to_be_clickable((By.XPATH, '/html/body/div[3]/div/form/div[1]/div[2]/div[3]/div/div/div[6]/div/ul/li/input')))
         piezometriaSelectionButton.click()
         loadingCircle = WebDriverWait(driver, wT).until(EC.presence_of_element_located((By.XPATH, '/html/body/div[1]/div[2]/div[1]/div[2]/img')))
@@ -117,8 +120,7 @@ def download_report(startDate, endDate):
         toZoneButton.click()
         time.sleep(5) #####
 
-        # "Àmbit  geogràfic". Es selecciona "Aqüífers", es deseleccionen tots els aqüífer i es selecciona: "Aqüífer al·luvial de la cubeta de la Llagosta". 
-        # Després es procedeix al següent pas: "Ajust selecció final"
+        #-- 5) Once we are in "Àmbit  geogràfic", we select "Aqüífers", we deselect all of them for later only select "Aqüífer al·luvial de la cubeta de la Llagosta". Then we continue to the next step: "Ajust selecció final" (final selection)
         loadingCircle = WebDriverWait(driver, wT).until(EC.presence_of_element_located((By.XPATH, '/html/body/div[1]/div[2]/div[1]/div[2]/img')))
         loadingCircle = WebDriverWait(driver, wT).until(EC.invisibility_of_element((By.XPATH, '/html/body/div[1]/div[2]/div[1]/div[2]/img')))
         aquifersButton = WebDriverWait(driver, wT).until(EC.element_to_be_clickable((By.XPATH, '/html/body/div[3]/div/form/div[1]/div[2]/div[4]/div/div[3]/div[6]/div/input')))
@@ -146,12 +148,12 @@ def download_report(startDate, endDate):
         loadingCircle = WebDriverWait(driver, wT).until(EC.invisibility_of_element((By.XPATH, '/html/body/div[1]/div[2]/div[1]/div[2]/img')))
         time.sleep(2) #####
 
-        # "Ajust selecció final". Es deixen tots els punts de control seleccionats i es passa al següent pas: "Informe Resultats"
+        #-- 6) Once inside the "Ajust selecció final", we go to the next step "Informe Resultats" (results report) and we select the dates
         toReportButton = driver.find_element(By.XPATH, '/html/body/div[3]/div/form/div[1]/div[2]/div[6]/div/div/div[2]/div[4]/a/img')
         toReportButton.click()
         time.sleep(2) #####
 
-        # Es selecciona la finestra d'estudi en base a les dates entrades
+        #-- Selection of dates
         startYear = startDate.year
         startMonth = startDate.month - 1
         startDay = startDate.day
@@ -159,41 +161,41 @@ def download_report(startDate, endDate):
         endMonth = endDate.month - 1
         endDay = endDate.day
         
-        # Data inicial
+        #-- START DATE
         startingDateButton = driver.find_element(By.XPATH, '/html/body/div[3]/div/form/div[3]/div[1]/div/div[2]/div/div/div[1]/div[2]/img')
         startingDateButton.click()
         time.sleep(2) #####
-        # Mes inicial
+        #-- month
         selectStartMonth = Select(driver.find_element(By.XPATH, '//*[@id="ui-datepicker-div"]/div/div/select[1]'))
         selectStartMonth.select_by_value(str(startMonth))
         time.sleep(2) #####
-        # Any inicial
+        #-- year
         selectStartYear = Select(driver.find_element(By.XPATH, '//*[@id="ui-datepicker-div"]/div/div/select[2]'))
         selectStartYear.select_by_value(str(startYear))
         time.sleep(2) #####
-        # Dia inicial
+        #-- day
         selectStartDay = driver.find_element(By.XPATH, f'//*[@id="ui-datepicker-div"]/table/tbody/tr/td[@data-handler="selectDay"]/a[text()="{startDay}"]')
         selectStartDay.click()
         time.sleep(2) #####
 
-        # Data final
+        #-- END DATE
         endingDateButton = driver.find_element(By.XPATH, '/html/body/div[3]/div/form/div[3]/div[1]/div/div[2]/div/div/div[2]/div[2]/img')
         endingDateButton.click()
         time.sleep(2) #####
-        # Mes final
+        #-- month
         selectEndMonth = Select(driver.find_element(By.XPATH, '/html/body/div[4]/div/div/select[1]'))
         selectEndMonth.select_by_value(str(endMonth))
         time.sleep(2) #####
-        # Any final
+        #-- year
         selectEndYear = Select(driver.find_element(By.XPATH, '//*[@id="ui-datepicker-div"]/div/div/select[2]'))
         selectEndYear.select_by_value(str(endYear))
         time.sleep(2) #####
-        # Dia final
+        #-- day
         selectEndDay = driver.find_element(By.XPATH, f'//*[@id="ui-datepicker-div"]/table/tbody/tr/td[@data-handler="selectDay"]/a[text()="{endDay}"]')
         selectEndDay.click()
         time.sleep(2) #####
         
-        # Es selecciona "Excel" com a format de l'arxiu de sortida corresponent a l'informe executat
+        #-- Excel as format for the report
         format_dropdown = Select(driver.find_element(By.XPATH, '/html/body/div[3]/div/form/div[3]/div[1]/div/div[2]/div/div/div[3]/div/select'))
         format_dropdown.select_by_value('excel')  # 'excel' is the value of the "Excel" option
         time.sleep(2) #####
@@ -203,5 +205,5 @@ def download_report(startDate, endDate):
         time.sleep(10)
 
     finally:
-        # Close the webdriver
+        #-- Close the webdriver
         driver.quit()
