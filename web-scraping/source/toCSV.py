@@ -1,5 +1,5 @@
 #-------------------------------#
-# Importing the libraries       #
+# Import libraries              #
 #-------------------------------#
 import os
 import csv
